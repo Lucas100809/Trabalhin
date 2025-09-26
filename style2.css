@@ -1,0 +1,126 @@
+/* Estilos base */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f0f0f0;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+/* Cubos */
+
+.cubo {
+    width: 60px;
+    height: 60px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    user-select: none;
+}
+
+/* Cada linha como um container flex */
+
+.linha {
+    display: flex;
+    background: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Agora vamos aplicar 10 formas diferentes de alinhamento nas linhas */
+
+/* 1 - alinhamento padrão: flex-start */
+.linha1 {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* 2 - centralizado horizontal */
+.linha2 {
+    justify-content: center;
+    align-items: center;
+}
+
+/* 3 - alinhado à direita */
+.linha3 {
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+/* 4 - espaço entre os cubos */
+.linha4 {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 5 - espaço ao redor dos cubos */
+.linha5 {
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+/* 6 - espaço igual entre os cubos, incluindo as bordas */
+.linha6 {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* 7 - cubos empilhados verticalmente (flex-direction: column) */
+.linha7 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 200px; /* para visualizar o efeito */
+}
+
+/* 8 - cubos empilhados na vertical e centralizados */
+.linha8 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+/* 9 - cubos empilhados verticalmente alinhados no final */
+.linha9 {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 200px;
+}
+
+/* 10 - cubos em linha, com todos os cubos com tamanho igual, esticados para ocupar espaço */
+.linha10 {
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.linha10 .cubo {
+    flex-grow: 1;
+    margin: 0 5px;
+    background-color: #e67e22;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    border-top: 1px solid #ccc;
+    padding: 15px 0;
+    background: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
